@@ -3,7 +3,7 @@ name: Publish 1. liga report
 on:
   workflow_dispatch:
   schedule:
-    - cron: "55 15 * * 1"
+    - cron: "07 16 * * 1"
       timezone: "Europe/Riga"
 
 permissions:
