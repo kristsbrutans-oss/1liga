@@ -5,8 +5,7 @@
 # - nerealizēti soda sitieni != vārti
 # - bez komandu kolonnām HTML izvadē
 # - tabulām ir filtrs un šķirošana
-# - HTML saglabā uz F:/1liga/index.html
-# ==========================================
+# - HTML saglabā uz docs/index.html# ==========================================
 
 # ---------- Pakotnes ----------
 packages <- c(
@@ -25,7 +24,11 @@ invisible(lapply(packages, library, character.only = TRUE))
 base_url <- "https://lff.lv"
 season_url_games <- "https://lff.lv/sacensibas/viriesi/lvbet-liga/"
 
-output_dir <- "F:/1liga"
+# ---------- Parametri ----------
+base_url <- "https://lff.lv"
+season_url_games <- "https://lff.lv/sacensibas/viriesi/lvbet-liga/"
+
+output_dir <- "docs"
 if (!dir.exists(output_dir)) dir.create(output_dir, recursive = TRUE)
 
 output_file <- file.path(output_dir, "index.html")
